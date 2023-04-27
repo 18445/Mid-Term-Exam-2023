@@ -103,6 +103,8 @@ API：[RQ527/ZHIHUAPI: 知乎日报API (github.com)](https://github.com/RQ527/ZH
 
 3. 变量命名规范，项目结构合理
 
+4. 完成加分功能
+
 
 ## 考核提交
 
