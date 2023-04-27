@@ -59,7 +59,7 @@ API：[RQ527/ZHIHUAPI: 知乎日报API (github.com)](https://github.com/RQ527/ZH
 
 - 顶部Banner（不允许使用三方库）与日期
 
-- 实现夜间功能
+- 上拉加载下拉刷新
 
 - 点击查看新闻详情，左右滑动切换下一篇（上一篇）新闻
 
@@ -69,7 +69,7 @@ API：[RQ527/ZHIHUAPI: 知乎日报API (github.com)](https://github.com/RQ527/ZH
 
 #### 加分功能：
 
-- 上拉加载下拉刷新
+- 实现夜间功能
 - 协调者布局实现Toolbar和Rv联动
 - 点击日期查看日历功能（不依靠系统API 用自定义View实现）
 
@@ -93,7 +93,33 @@ API：[RQ527/ZHIHUAPI: 知乎日报API (github.com)](https://github.com/RQ527/ZH
 
 5.可以部分CV代码，但要求必须CV的代码是自己能看懂的，禁止大面积CV代码！！！
 
-6.App中的**核心功能**一定要完成，否则视为未完成，**基础功能**请尽量按照要求完成，否则影响考核评价，**加分功能**不强制要求，请在确保**基础功能**完成后进行尝试。
+6.Github 的 commit 记录不得超过一天，请尽量在完成一个新功能后提交commit
+
+7.App中的**核心功能**一定要完成，否则视为未完成，**基础功能**请尽量按照要求完成，否则影响考核评价，**加分功能**不强制要求，请在确保**基础功能**完成后进行尝试。
+
+### 依赖要求
+
+- **禁止**使用除以下库外的其他库，可使用的库如下：
+  - 所有 `google` 库
+  - 所有 `android` 以及 `androidx` 库
+  - 所有 `jetbrains` 库（协程包含在这里面）
+  - 部分第三方库
+    - [`ARouter`](https://github.com/alibaba/ARouter)（如果不熟练多模块开发，就不要尝试）
+    - [`Glide`](https://github.com/bumptech/glide)
+    - [`Lottie`](https://lottiefiles.com/blog/working-with-lottie/getting-started-with-lottie-animations-in-android-app)
+    - [`Retrofit`](https://github.com/square/retrofit)
+    - [`Okhttp`](https://github.com/square/okhttp)
+    - [`Gson`](https://github.com/google/gson)
+    - [`Rxjava`](https://github.com/ReactiveX/RxJava)
+    - [`RxPermissions`](https://github.com/tbruyelle/RxPermissions)：一个权限申请库
+    - [`PhotoView`](https://github.com/Baseflow/PhotoView)：一个专门查看图片的库
+    - 如果你做的项目需要使用到视频播放的功能，允许使用播放视频的第三方库（因为官方库有坑）
+    - 如果对依赖有特殊要求，请在大群里提问
+    - 如果使用自己的依赖库，有如下要求
+      - 不能是 fork 来的
+      - 绝大部分代码是自己所写
+- 由于本次考核需要衡量你们接手掌邮的能力，所以**强烈不推荐**使用 `compose`，掌邮目前明确禁止使用 `compose`
+- `Banner`（轮播图）请自己实现
 
 ## 考核加分项
 
@@ -108,7 +134,7 @@ API：[RQ527/ZHIHUAPI: 知乎日报API (github.com)](https://github.com/RQ527/ZH
 
 ## 考核提交
 
-- 截止日期：2023年5月2日12:00
+- 截止日期：2023年5月3日12:00
 - 提交方式：发送邮件到：mobile@redrock.team
   - 邮件标题：2023中期考核-学号-姓名。如：2023中期考核-2022214xxx-李戬
   - 邮件正文：Github仓库地址
